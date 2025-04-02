@@ -1,6 +1,6 @@
-import SA from '../assets/SA.png';
-import SCM from '../assets/SCM.png';
-import SE from '../assets/SE.png';
+import SA from '../assets/images/SA.png';
+import SCM from '../assets/images/SCM.png';
+import SE from '../assets/images/SE.png';
 
 export const projectData = [
   {
