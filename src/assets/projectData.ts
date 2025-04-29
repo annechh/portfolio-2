@@ -2,6 +2,12 @@ import SA from '../assets/images/SA.png';
 import SCM from '../assets/images/SCM.png';
 import SE from '../assets/images/SE.png';
 import BM from '../assets/images/BM.png';
+import BG_IMG from '../assets/images/ramsdalsnipa2.jpg';
+
+export const backgroundData = {
+  url: BG_IMG,
+  alt: 'Ramsdalsnipa mountain',
+};
 
 export const projectData = [
   {
