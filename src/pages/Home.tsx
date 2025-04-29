@@ -8,7 +8,7 @@ export default function Home() {
       <Background image={backgroundData} />
       <section className="my-[100px]">
         <h2 className="font-bold text-5xl text-shadow-[] ">Projects</h2>
-        <div className="card-wrapper grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+        <div className="card-wrapper grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5 mx-10">
           {projectData.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
