@@ -1,27 +1,51 @@
 import SA from '../assets/images/SA.png';
 import SCM from '../assets/images/SCM.png';
 import SE from '../assets/images/SE.png';
+import BM from '../assets/images/BM.png';
 
 export const projectData = [
   {
-    id: 1,
-    image: SA,
-    title: 'Shira´s Adventure',
-    description: `First year Exam Project. In this project we were creating a blog page using Api. The methods we were to use were CREATE, GET, EDIT, PUT and DELETE. 
-      We could create our own fictional client, so I chose my dog Shira to be my client. I had a lot of fun with this project since I used Shira as my client, and could provide my own photos.`,
-  },
-
-  {
-    id: 2,
-    image: SCM,
-    title: 'Sunnfjord Science Museum',
-    description: `Design and build a modern, accessible and responsive web presence for the client using the provided image and text content.
-    The site should appeal to youngsters without pandering; while aiming at a younger audience it should not patronize them with overtly childish themes. The core purpose of the site is to excite and entice people to visit the museum.`,
+    id: 4,
+    media: {
+      url: BM,
+      alt: 'Screenshot of Bid Me website',
+    },
+    title: 'Bid Me',
+    description: `Second year semester project. 
+    In this project the goal was to create a website for a fictional client. The client was a company that wanted to create a website where people could bid on items.
+    The website was to be a simple auction site where people could bid on items.`,
   },
 
   {
     id: 3,
-    image: SE,
+    media: {
+      url: SA,
+      alt: 'Screenshot of Shira´s Adventure website',
+    },
+    title: 'Shira´s Adventure',
+    description: `First year Exam Project. 
+    In this project the goal was to create a blog page using Api. The methods to use in this project were CREATE, GET, EDIT, PUT and DELETE. 
+    We could create our own fictional client, so I chose my dog Shira to be my client. I had a lot of fun with this project since I used Shira as my client, and could provide my own photos.`,
+  },
+
+  {
+    id: 2,
+    media: {
+      url: SCM,
+      alt: 'Screenshot of Sunnfjord Science Museum website',
+    },
+    title: 'Sunnfjord Science Museum',
+    description: `First year semester project.
+    Design and build a modern, accessible and responsive web presence for the client using the provided image and text content.
+    The site should appeal to youngsters without pandering; while aiming at a younger audience it should not patronize them with overtly childish themes. The core purpose of the site is to excite and entice people to visit the museum.`,
+  },
+
+  {
+    id: 1,
+    media: {
+      url: SE,
+      alt: 'Screenshot of Square Eyes website',
+    },
     title: 'Square Eyes',
     description: `SquareEyes was my first assignment to put into practice what I’ve learned about HTML and CSS over this course by bringing my design alive.
     SquareEyes is a video streaming website where you can purchase high-quality videos directly from the people who make them.`,
