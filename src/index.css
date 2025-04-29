@@ -1,15 +1,19 @@
 @import 'tailwindcss';
 
-:root {
-  --purple: #210727;
-  --faded-purple: #21072778;
-}
+/* :root { */
+/* --purple: #210727; */
+/* --purple-light: #2107273d; */
+/* --white-faded: #ffffff81; */
+/* --purple-faded: rgb(58, 0, 53, 0.1); */
+/* --black: 0px 2px 2px rgba(0, 0, 0, 1); */
+/* } */
 
 @theme {
   --font-display: 'Roboto', sans-serif;
-
-  --color-purple: var(--purple);
-  --color-faded-purple: var(--faded-purple);
+  --color-purple: #210727;
+  --color-purple-light: #2107273d;
+  --color-purple-faded: #3a00351a;
+  /* --text-shadow-black: var(--color-black); */
 }
 
 body {
