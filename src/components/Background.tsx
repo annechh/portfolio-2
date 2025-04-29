@@ -1,16 +1,22 @@
-type BackgroundImage = {
-  props: string;
-};
+import { MediaType } from '../types/commons';
 
-export default function Background({ props }: BackgroundImage) {
+interface BackgroundProps {
+  image: MediaType;
+}
+
+const Background: React.FC<BackgroundProps> = ({ image }) => {
+  console.log(image);
+
   return (
     <div className="fixed inset-0 -z-10 flex flex-col justify-center w-full min-h-screen">
       <img
-        src={props}
-        alt="Ramsdalsnipa mountain"
+        src={image.url}
+        alt={image.alt}
         className="absolute inset-0 h-full w-full object-cover"
       />
       <div className="absolute inset-0 bg-[#21072778]"></div>
     </div>
   );
-}
+};
+
+export default Background;
