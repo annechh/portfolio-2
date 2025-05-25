@@ -6,11 +6,9 @@ interface ProjectProps {
 }
 
 const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
-  console.log(project);
-
   return (
     <div className="max-w-xl">
-      <div className="card p-5 bg-[var(--color-purple-faded)] rounded flex flex-col gap-5 h-full">
+      <div className="card p-5 bg-purple-faded rounded flex flex-col gap-5 h-full">
         <div className="img-container">
           <img src={project.media.url} alt={project.media.alt} className="w-full" />
         </div>
@@ -19,9 +17,9 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
 
           <div className="flex flex-col gap-5 h-full justify-between">
             <div className="description-container flex flex-col gap-5">
-              {project.description.split('\n').map((paragraph, index) => (
+              {/* {project.description.split('\n').map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
-              ))}
+              ))} */}
             </div>
 
             <div className="icons-container">
