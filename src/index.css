@@ -9,7 +9,7 @@
 /* } */
 
 @theme {
-  --font-display: 'Roboto', sans-serif;
+  --font-primary: 'Roboto', sans-serif;
   --color-purple: #210727;
   --color-purple-light: #2107273d;
   --color-purple-faded: #3a00351a;
