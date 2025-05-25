@@ -3,16 +3,20 @@ import logo from '../assets/images/HaugeDevLogo.svg';
 
 export default function Header() {
   return (
-    <header className="fixed w-screen px-5 md:px-10">
-      <div className="flex justify-between items-center">
+    <header className="fixed flex w-full h-16 px-5 md:px-10">
+      <nav className="flex justify-between items-center w-full gap-5 text-sm">
         <img src={logo} alt="logo" className="h-12" />
-        <nav className="flex gap-5 ">
-          <Link className="text-sm" to="/">
-            Home
-          </Link>
-          <Link to="/about">About</Link>
-        </nav>
-      </div>
+
+        <ul className="flex gap-5">
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 }
