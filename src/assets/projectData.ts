@@ -2,11 +2,13 @@ import BM from '../assets/images/BM.png';
 import SA from '../assets/images/SA.png';
 import SSM from '../assets/images/SSM.png';
 import SE from '../assets/images/SE.png';
+import HOLIDAZE from '../assets/images/holidaze.png';
 
 import BM_Icon from '../assets/images/BM-icon.png';
 import SA_Icon from '../assets/images/SA-icon.png';
 import SSM_Icon from '../assets/images/SSM-icon.png';
 import SE_Icon from '../assets/images/SE-icon.png';
+import HOLIDAZE_Icon from '../assets/images/HOLIDAZE-icon.png';
 
 import BG_IMG from '../assets/images/ramsdalsnipa2.jpg';
 
@@ -16,6 +18,31 @@ export const backgroundData = {
 };
 
 export const projectData = [
+  {
+    id: 5,
+    media: {
+      url: HOLIDAZE,
+      alt: 'Screenshot of Holidaze website',
+    },
+    title: 'Holidaze',
+    description: `Second year Exam. 
+    Holidaze description `,
+    icons: {
+      url: HOLIDAZE_Icon,
+      alt: 'Holidaze icon',
+    },
+    githubMedia: {
+      url: 'https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg',
+      alt: 'GitHub icon',
+    },
+    githubLink: {
+      link: 'https://github.com/H-A-L-code/project-exam-2',
+    },
+    liveDemo: {
+      link: 'https://hal-holidaze.netlify.app/',
+    },
+  },
+
   {
     id: 4,
     media: {
