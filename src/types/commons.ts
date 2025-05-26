@@ -17,3 +17,10 @@ export type ProjectType = {
   githubLink: LinkType;
   liveDemo: LinkType;
 };
+
+export type InfoType = {
+  media: MediaType;
+  title: string;
+  intro: string;
+  link?: LinkType;
+};

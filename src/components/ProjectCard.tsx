@@ -7,19 +7,21 @@ interface ProjectProps {
 
 const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
   return (
-    <div className="max-w-xl">
-      <div className="card p-5 bg-purple-faded rounded flex flex-col gap-5 h-full">
+    <div className="h-full rounded-full">
+      <div className="card p-5 bg-test shadow-sm shadow-white-faded onHover rounded flex flex-col gap-5 h-full">
         <div className="img-container">
           <img src={project.media.url} alt={project.media.alt} className="w-full" />
         </div>
         <div className="info-container flex flex-col gap-5 h-full">
           <h3 className="font-bold text-2xl">{project.title}</h3>
 
-          <div className="flex flex-col gap-5 h-full justify-between">
+          <div className="flex flex-col gap-5 h-full justify-between min-h-[240px]">
             <div className="description-container flex flex-col gap-5">
-              {/* {project.description.split('\n').map((paragraph, index) => (
-                <p key={index}>{paragraph}</p>
-              ))} */}
+              {project.description.split('\n').map((paragraph, index) => (
+                <p key={index} className="line-clamp-1">
+                  {paragraph}
+                </p>
+              ))}
             </div>
 
             <div className="icons-container">
