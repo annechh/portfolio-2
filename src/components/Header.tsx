@@ -3,8 +3,8 @@ import logo from '../assets/images/HaugeDevLogo.svg';
 
 export default function Header() {
   return (
-    <header className="fixed flex w-full h-16 px-5 md:px-10">
-      <nav className="flex justify-between items-center w-full gap-5 text-sm">
+    <header className="fixed flex w-full h-16 px-5 md:px-10 backdrop-blur-[20px]">
+      <nav className="flex justify-between items-center w-full gap-5 text-sm ">
         <img src={logo} alt="logo" className="h-12" />
 
         <ul className="flex gap-5">
