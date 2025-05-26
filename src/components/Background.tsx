@@ -5,8 +5,6 @@ interface BackgroundProps {
 }
 
 const Background: React.FC<BackgroundProps> = ({ image }) => {
-  console.log(image);
-
   return (
     <div className="fixed inset-0 -z-10 flex flex-col justify-center w-full min-h-screen">
       <img
