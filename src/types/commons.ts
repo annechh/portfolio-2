@@ -12,6 +12,7 @@ export type ProjectType = {
   media: MediaType;
   title: string;
   description: string;
+  shortDescription: string;
   icons: MediaType;
   githubMedia: MediaType;
   githubLink: LinkType;
