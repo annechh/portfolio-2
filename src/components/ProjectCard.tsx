@@ -8,7 +8,7 @@ interface ProjectProps {
 const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
   return (
     <div className="h-full rounded-full">
-      <div className="card p-5 bg-test shadow-sm shadow-white-faded onHover rounded flex flex-col gap-5 h-full">
+      <div className="card p-5 bg-test shadow-sm shadow-white-faded rounded flex flex-col gap-5 h-full">
         <div className="img-container">
           <img src={project.media.url} alt={project.media.alt} className="w-full" />
         </div>
