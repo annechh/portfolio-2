@@ -1,21 +1,14 @@
 @import 'tailwindcss';
 
-/* :root { */
-/* --purple: #210727; */
-/* --purple-light: #2107273d; */
-/* --white-faded: #ffffff81; */
-/* --purple-faded: rgb(58, 0, 53, 0.1); */
-/* --black: 0px 2px 2px rgba(0, 0, 0, 1); */
-/* } */
-
 @theme {
   --font-primary: 'Roboto', sans-serif;
 
   --color-white-faded: #ffffff81;
-  --color-purple: #210727;
+  --color-purple: #573564;
   --color-purple-light: #2107273d;
   --color-purple-faded: #3a00351a;
   --color-deep-indigo: #262239;
+  --color-sundown-blush: #7b4042;
   --shadow-sm: 0px 4px 15px 0px rgba(0, 0, 0, 0.5);
 }
 
@@ -34,14 +27,29 @@ html {
   }
 }
 
-.card {
-  @apply w-[480px] m-[-150px]  bg-deep-indigo;
+.button {
+  @apply bg-sundown-blush shadow-sm flex items-center justify-center max-w-64 w-full rounded-full text-base md:text-xl font-bold tracking-wider;
 }
 
-.card:first-child {
+/* .card {
+  @apply w-[480px] m-[-150px]  bg-deep-indigo;
+} */
+
+/* .card:first-child {
   @apply ml-0;
 }
 
 .card-wrapper {
   @apply flex;
+} */
+
+/* Embla Carousel Styles */
+.embla {
+  @apply overflow-hidden w-full;
+}
+.embla__container {
+  @apply flex;
+}
+.embla__slide {
+  @apply flex flex-shrink-0 w-full px-5 lg:px-10;
 }
