@@ -1,5 +1,32 @@
+import { useEffect } from 'react';
+import useEmblaCarousel from 'embla-carousel-react';
+import { projectData } from '../assets/projectData';
+import CardProject from './CardProject';
+// import Autoplay from 'embla-carousel-autoplay';
+
 const Carousel = () => {
-  return <div>Carousel</div>;
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  // [Autoplay()]
+  useEffect(() => {
+    if (emblaApi) {
+      console.log(emblaApi.slideNodes());
+    }
+  }, [emblaApi]);
+
+  return (
+    <div className="embla" ref={emblaRef}>
+      <div className="embla__container">
+        {projectData.map((project, index) => (
+          <div
+            className="embla__slide max-h-[1000px] py-10 flex items-center justify-center"
+            key={index}
+          >
+            <CardProject project={project} />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
 export default Carousel;
