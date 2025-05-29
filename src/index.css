@@ -19,6 +19,21 @@
   --shadow-sm: 0px 4px 15px 0px rgba(0, 0, 0, 0.5);
 }
 
+@layer utilities {
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .spin {
+    animation: spin 15s linear infinite;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
