@@ -1,23 +1,23 @@
 import ProjectCard from '../components/ProjectCard';
 import { backgroundData, projectData } from '../assets/projectData';
 import Background from '../components/Background';
-import InfoCard from '../components/InfoCard';
+// import InfoCard from '../components/InfoCard';
 import Carousel from '../components/Carousel';
+import Introduction from '../components/Introduction';
 
 export default function Home() {
   return (
     <div className="flex flex-col justify-center items-center w-full">
       <Background image={backgroundData} />
 
-      <section className="min-h-screen flex flex-col justify-center items-center bg-pink-400">
-        <InfoCard />
-      </section>
+      <Introduction />
 
       <button className="max-w-[250px] px-10 py-3.5 rounded-full bg-purple-700">Test button</button>
 
       <section className="my-[100px] flex flex-col justify-center items-center w-full min-h-screen bg-deep-indigo">
         <div className="flex max-w-[1000px] bg-amber-300"></div>
       </section>
+
       <section className="flex flex-col justify-center items-center w-full h-screen">
         <h2 className="text-3xl lg:text-5xl tracking-widest font-bold">My projects</h2>
         <Carousel />
@@ -33,7 +33,7 @@ export default function Home() {
       </section>
 
       <section className="min-h-screen flex flex-col justify-center items-center bg-green-400">
-        <InfoCard />
+        {/* <InfoCard /> */}
       </section>
     </div>
   );
