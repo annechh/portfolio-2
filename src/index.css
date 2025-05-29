@@ -10,6 +10,7 @@
   --color-deep-indigo: #262239;
   --color-sundown-blush: #7b4042;
   --shadow-sm: 0px 4px 15px 0px rgba(0, 0, 0, 0.5);
+  --text-shadow-sm: 0px 2px 2px rgba(0, 0, 0, 1);
 }
 
 html {
