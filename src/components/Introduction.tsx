@@ -10,7 +10,9 @@ export default function Introduction() {
         <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-shadow-sm">
           {introductionData.title}
         </h1>
-        <p className="text-xs md:text-sm text-shadow-sm pt-1 md:pt-2">{introductionData.intro2}</p>
+        <p className="text-xs md:text-base text-shadow-sm pt-1 md:pt-2">
+          {introductionData.intro2}
+        </p>
       </div>
       <div className="max-w-[200px] lg:max-w-[300px] w-full h-full rounded-full overflow-hidden shadow-sm">
         <img
