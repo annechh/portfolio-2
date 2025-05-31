@@ -9,8 +9,10 @@
   --color-purple-faded: #3a00351a;
   --color-deep-indigo: #262239;
   --color-sundown-blush: #7b4042;
+  --color-yellow: #ffc857;
   --shadow-sm: 0px 4px 15px 0px rgba(0, 0, 0, 0.5);
   --text-shadow-sm: 0px 2px 2px rgba(0, 0, 0, 1);
+  --inset-shadow-sm: 2px 10px 0px rgba(0, 0, 0, 0.05);
 }
 
 html {
@@ -22,29 +24,24 @@ html {
 }
 
 .onHover {
-  @apply transition-all duration-500 ease-in-out;
+  @apply transition-all duration-300 ease-in-out;
   &:hover {
     @apply scale-105;
   }
 }
 
+.projectButton {
+  @apply w-full border border-yellow cursor-pointer h-[60px] z-10 text-xl font-bold;
+}
+
+.selectedProjectButton {
+  @apply w-full border bg-yellow text-black h-[60px] text-shadow-none;
+}
+
 .button {
-  @apply bg-sundown-blush shadow-sm flex items-center justify-center max-w-64 w-full rounded-full text-base md:text-xl font-bold tracking-wider;
+  @apply h-12 border border-yellow hover:bg-yellow hover:text-black shadow-sm flex items-center justify-center w-full rounded-full text-base md:text-xl font-bold tracking-wider cursor-pointer;
 }
 
-/* .card {
-  @apply w-[480px] m-[-150px]  bg-deep-indigo;
-} */
-
-/* .card:first-child {
-  @apply ml-0;
-}
-
-.card-wrapper {
-  @apply flex;
-} */
-
-/* Embla Carousel Styles */
 .embla {
   @apply overflow-hidden w-full;
 }
