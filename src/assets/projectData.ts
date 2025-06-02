@@ -1,9 +1,9 @@
-import BM from '../assets/images/BM.png';
-import SA from '../assets/images/SA.png';
-import SSM from '../assets/images/SSM.png';
-import SE from '../assets/images/SE.png';
-import LS from '../assets/images/LS.png';
-import HOLIDAZE from '../assets/images/holidaze.png';
+import SA from '../assets/images/ShirasAdventure.svg';
+import SSM from '../assets/images/SSM.svg';
+import SE from '../assets/images/SquareEyes.svg';
+import BM from '../assets/images/BidMe.svg';
+import LS from '../assets/images/LazySales.svg';
+import HOLIDAZE from '../assets/images/Holidaze.svg';
 
 import BM_Icon from '../assets/images/BM-icon.png';
 import SA_Icon from '../assets/images/SA-icon.png';
