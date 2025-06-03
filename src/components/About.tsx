@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { aboutMeData } from '../assets/data';
+import { aboutMeData } from '../data/data';
 
 export default function About() {
   return (

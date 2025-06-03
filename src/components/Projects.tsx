@@ -1,4 +1,4 @@
-import { projectData } from '../assets/projectData';
+import { projectData } from '../data/projectData';
 import ProjectCards from './ProjectCards';
 
 const Projects = () => {

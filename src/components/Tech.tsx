@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { techData } from '../assets/data/tech';
+import { techData } from '../data/tech';
 
 const Tech = () => {
   return (
