@@ -21,7 +21,7 @@ export const backgroundData = {
 
 export const projectData = [
   {
-    id: 6,
+    id: 'Holidaze',
     media: {
       url: HOLIDAZE,
       alt: 'Screenshot of Holidaze website',
@@ -47,7 +47,7 @@ export const projectData = [
   },
 
   {
-    id: 5,
+    id: 'lazySales',
     media: {
       url: LS,
       alt: 'Screenshot of Lazy Sales website',
@@ -73,7 +73,7 @@ export const projectData = [
   },
 
   {
-    id: 4,
+    id: 'bidMe',
     media: {
       url: BM,
       alt: 'Screenshot of Bid Me website',
@@ -100,7 +100,7 @@ export const projectData = [
   },
 
   {
-    id: 3,
+    id: 'shirasAdventure',
     media: {
       url: SA,
       alt: 'Screenshot of Shira´s Adventure website',
@@ -127,7 +127,7 @@ export const projectData = [
   },
 
   {
-    id: 2,
+    id: 'sunnfjordScienceMuseum',
     media: {
       url: SSM,
       alt: 'Screenshot of Sunnfjord Science Museum website',
@@ -154,7 +154,7 @@ export const projectData = [
   },
 
   {
-    id: 1,
+    id: 'squareEyes',
     media: {
       url: SE,
       alt: 'Screenshot of Square Eyes website',
