@@ -1,15 +1,16 @@
-import SA from '../assets/images/ShirasAdventure.svg';
-import SSM from '../assets/images/SSM.svg';
-import SE from '../assets/images/SquareEyes.svg';
-import BM from '../assets/images/BidMe.svg';
-import LS from '../assets/images/LazySales.svg';
-import HOLIDAZE from '../assets/images/Holidaze.svg';
+import HOLIDAZE from '../assets/svgs/Holidaze.svg';
+import LS from '../assets/svgs/LazySales.svg';
+import BM from '../assets/svgs/BidMe.svg';
+import SA from '../assets/svgs/ShirasAdventure.svg';
+import SSM from '../assets/svgs/SSM.svg';
+import SE from '../assets/svgs/SquareEyes.svg';
 
-import BM_Icon from '../assets/images/BM-icon.png';
-import SA_Icon from '../assets/images/SA-icon.png';
-import SSM_Icon from '../assets/images/SSM-icon.png';
-import SE_Icon from '../assets/images/SE-icon.png';
-import HOLIDAZE_Icon from '../assets/images/HOLIDAZE-icon.png';
+import HOLIDAZE_Icon from '../assets/svgs/Holidaze.svg';
+import LS_Icon from '../assets/svgs/LazySales.svg';
+import BM_Icon from '../assets/svgs/BidMe.svg';
+import SA_Icon from '../assets/svgs/ShirasAdventure.svg';
+import SSM_Icon from '../assets/svgs/SSM.svg';
+import SE_Icon from '../assets/svgs/SquareEyes.svg';
 
 import BG_IMG from '../assets/images/ramsdalsnipa2.jpg';
 
@@ -56,7 +57,7 @@ export const projectData = [
     Lazy Sales description `,
     shortDescription: 'JS Frameworks course assignment - Lazy Sales short description',
     icons: {
-      url: HOLIDAZE_Icon,
+      url: LS_Icon,
       alt: 'Holidaze icon',
     },
     githubMedia: {

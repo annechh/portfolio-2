@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import logo from '../assets/images/HaugeDevLogo.svg';
+import logo from '../assets/svgs/HaugeDevLogo.svg';
 
 export default function Header() {
   return (
