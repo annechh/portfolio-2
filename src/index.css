@@ -2,6 +2,8 @@
 
 @theme {
   --font-primary: 'Roboto', sans-serif;
+  --color-dark: #1d1d1d;
+  --color-pink: #c392ff;
 
   --color-white-faded: #ffffff81;
   --color-purple: #573564;
@@ -9,7 +11,9 @@
   --color-purple-faded: #3a00351a;
   --color-deep-indigo: #262239;
   --color-sundown-blush: #7b4042;
-  --shadow-sm: 0px 4px 15px 0px rgba(0, 0, 0, 0.5);
+
+  --shadow-sm: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
+  --shadow-pink: 0px 4px 15px 0px rgba(195, 146, 255, 0.25);
   --text-shadow-sm: 0px 2px 2px rgba(0, 0, 0, 1);
 }
 

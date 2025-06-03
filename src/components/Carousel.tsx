@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import { projectData } from '../assets/projectData';
-import CardProject from './CardProject';
+import ProjectCards from './ProjectCards';
 // import Autoplay from 'embla-carousel-autoplay';
 
 const Carousel = () => {
@@ -21,7 +21,7 @@ const Carousel = () => {
             className="embla__slide max-h-[1000px] py-10 flex items-center justify-center"
             key={index}
           >
-            <CardProject project={project} />
+            <ProjectCards project={project} />
           </div>
         ))}
       </div>
