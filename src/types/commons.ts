@@ -8,7 +8,7 @@ export type LinkType = {
 };
 
 export type ProjectType = {
-  id: number;
+  id: string;
   media: MediaType;
   title: string;
   description: string;

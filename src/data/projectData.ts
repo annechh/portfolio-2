@@ -1,15 +1,16 @@
-import SA from '../assets/images/ShirasAdventure.svg';
-import SSM from '../assets/images/SSM.svg';
-import SE from '../assets/images/SquareEyes.svg';
-import BM from '../assets/images/BidMe.svg';
-import LS from '../assets/images/LazySales.svg';
-import HOLIDAZE from '../assets/images/Holidaze.svg';
+import HOLIDAZE from '../assets/svgs/Holidaze.svg';
+import LS from '../assets/svgs/LazySales.svg';
+import BM from '../assets/svgs/BidMe.svg';
+import SA from '../assets/svgs/ShirasAdventure.svg';
+import SSM from '../assets/svgs/SSM.svg';
+import SE from '../assets/svgs/SquareEyes.svg';
 
-import BM_Icon from '../assets/images/BM-icon.png';
-import SA_Icon from '../assets/images/SA-icon.png';
-import SSM_Icon from '../assets/images/SSM-icon.png';
-import SE_Icon from '../assets/images/SE-icon.png';
-import HOLIDAZE_Icon from '../assets/images/HOLIDAZE-icon.png';
+import HOLIDAZE_Icon from '../assets/svgs/Holidaze.svg';
+import LS_Icon from '../assets/svgs/LazySales.svg';
+import BM_Icon from '../assets/svgs/BidMe.svg';
+import SA_Icon from '../assets/svgs/ShirasAdventure.svg';
+import SSM_Icon from '../assets/svgs/SSM.svg';
+import SE_Icon from '../assets/svgs/SquareEyes.svg';
 
 import BG_IMG from '../assets/images/ramsdalsnipa2.jpg';
 
@@ -20,7 +21,7 @@ export const backgroundData = {
 
 export const projectData = [
   {
-    id: 6,
+    id: 'Holidaze',
     media: {
       url: HOLIDAZE,
       alt: 'Screenshot of Holidaze website',
@@ -46,7 +47,7 @@ export const projectData = [
   },
 
   {
-    id: 5,
+    id: 'lazySales',
     media: {
       url: LS,
       alt: 'Screenshot of Lazy Sales website',
@@ -56,7 +57,7 @@ export const projectData = [
     Lazy Sales description `,
     shortDescription: 'JS Frameworks course assignment - Lazy Sales short description',
     icons: {
-      url: HOLIDAZE_Icon,
+      url: LS_Icon,
       alt: 'Holidaze icon',
     },
     githubMedia: {
@@ -72,7 +73,7 @@ export const projectData = [
   },
 
   {
-    id: 4,
+    id: 'bidMe',
     media: {
       url: BM,
       alt: 'Screenshot of Bid Me website',
@@ -99,7 +100,7 @@ export const projectData = [
   },
 
   {
-    id: 3,
+    id: 'shirasAdventure',
     media: {
       url: SA,
       alt: 'Screenshot of Shira´s Adventure website',
@@ -126,7 +127,7 @@ export const projectData = [
   },
 
   {
-    id: 2,
+    id: 'sunnfjordScienceMuseum',
     media: {
       url: SSM,
       alt: 'Screenshot of Sunnfjord Science Museum website',
@@ -153,7 +154,7 @@ export const projectData = [
   },
 
   {
-    id: 1,
+    id: 'squareEyes',
     media: {
       url: SE,
       alt: 'Screenshot of Square Eyes website',

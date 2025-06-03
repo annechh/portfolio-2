@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
-import { projectData } from '../assets/projectData';
+import { projectData } from '../data/projectData';
 import ProjectCards from './ProjectCards';
 // import Autoplay from 'embla-carousel-autoplay';
 
