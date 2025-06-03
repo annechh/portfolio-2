@@ -13,7 +13,7 @@ export const introductionData = {
 
 export const aboutMeData = {
   title: 'About Me',
-  description: `Hi! My name is Anne-Cathrine Hauge – a 36-year-old front-end developer from a beautiful little place called Naustdal, on the west coast of Norway.
+  description: `Hi!👋 My name is Anne-Cathrine Hauge – a 36-year-old front-end developer from a beautiful little place called Naustdal, on the west coast of Norway.
 
 I'm currently finishing a two-year front-end development education at Noroff (vocational level), where I've been working extensively with HTML, CSS, JavaScript, React and design tools like Figma. I love turning visual ideas into clean, user-friendly websites and interfaces.
 
