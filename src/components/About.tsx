@@ -19,7 +19,7 @@ export default function About() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className="flex flex-col-reverse md:flex-row max-w-[1260px] h-full w-full border-y mb-[100px]"
+        className="flex flex-col-reverse md:flex-row max-w-[1260px] h-full w-full border-y border-white-faded mb-[100px]"
       >
         <div className="flex flex-col self-center md:self-end max-w-[500px] w-full h-full">
           <img
