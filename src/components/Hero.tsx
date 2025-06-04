@@ -10,8 +10,8 @@ export default function Hero() {
     >
       <div className="min-h-screen flex flex-col lg:flex-row justify-between xl:justify-center items-center gap-10 w-full px-5 sm:px-8 lg:px-10 h-full max-w-[1920px] ">
         <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 3, ease: 'easeOut' }}
           className="flex flex-col justify-center items-start flex-1 pt-[15vh] lg:pt-0 z-20 lg:min-w-[500px]"
         >

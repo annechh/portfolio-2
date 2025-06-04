@@ -9,8 +9,8 @@ const Projects = () => {
       className="relative flex flex-col justify-center items-center w-full min-h-screen gap-5 px-6 py-[70px] lg:py-[150px]"
     >
       <motion.h2
-        initial={{ opacity: 0, x: 50 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 2 }}
         className="pb-2 text-2xl lg:text-[40px] font-bold w-full max-w-[1260px]"
