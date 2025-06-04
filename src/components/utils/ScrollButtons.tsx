@@ -1,19 +1,22 @@
-import { Link } from 'react-scroll';
-
 type ScrollButtonProps = {
   scrollTo: string;
   icon: React.ReactNode;
 };
 
 const ScrollButtons = ({ scrollTo, icon }: ScrollButtonProps) => {
+  const handleClick = () => {
+    const el = document.getElementById(scrollTo);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <Link
-      to={scrollTo}
-      duration={500}
-      className="cursor-pointer w-20 h-[50px] flex justify-center items-end animate-bounce"
+    <button
+      onClick={handleClick}
+      className="cursor-pointer w-20 h-[50px] flex justify-center items-center animate-bounce"
+      aria-label={`Scroll to ${scrollTo}`}
     >
       {icon}
-    </Link>
+    </button>
   );
 };
 

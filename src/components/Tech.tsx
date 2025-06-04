@@ -1,21 +1,16 @@
 import { motion } from 'framer-motion';
 import { techData } from '../data/tech';
-import ScrollButtons from './utils/ScrollButtons';
-import { IoIosArrowUp } from 'react-icons/io';
 
 const Tech = () => {
   return (
     <motion.section
-      id="tech"
+      id="toolkit"
       initial={{ opacity: 0, y: 0 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
       className="relative min-h-screen flex flex-col justify-center items-center w-full px-6 py-[70px] lg:py-[150px]"
     >
-      <div className="absolute top-0 w-full flex justify-center items-center h-[50px] mt-[60px] lg:mt-[100px]">
-        <ScrollButtons scrollTo="about" icon={<IoIosArrowUp className="text-4xl" />} />
-      </div>
       <h2 className="pb-2 text-2xl lg:text-[40px] font-bold w-full max-w-[1260px] text-shadow-sm">
         MY TOOLKIT
       </h2>
