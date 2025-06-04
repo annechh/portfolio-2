@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 interface ProjectProps {
   project: {
     title: string;
@@ -11,7 +13,13 @@ interface ProjectProps {
 
 const ProjectCards = ({ project }: ProjectProps) => {
   return (
-    <article className="w-full h-full">
+    <motion.article
+      initial={{ opacity: 0, x: 50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 2 }}
+      className="w-full h-full"
+    >
       <div className="group relative w-full aspect-[3/2] sm:aspect-[1/1] [perspective:1000px]">
         <div className="relative h-full w-full rounded-xl bg-dark shadow-sm transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
           <div className="absolute inset-0 p-6 flex flex-col gap-6 rounded-xl">
@@ -29,7 +37,7 @@ const ProjectCards = ({ project }: ProjectProps) => {
           </div>
         </div>
       </div>
-    </article>
+    </motion.article>
   );
 };
 

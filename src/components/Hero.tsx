@@ -1,16 +1,20 @@
 import { motion } from 'framer-motion';
 import { introductionData } from '../data/data';
 import GlowDot from '../assets/images/glow-dot.png';
+import ScrollButtons from './utils/ScrollButtons';
+import { IoIosArrowDown } from 'react-icons/io';
 
 export default function Hero() {
   return (
-    <>
-      {/* <AnimatePresence mode="wait"> */}
-      <div className="min-h-screen flex flex-col lg:flex-row justify-between xl:justify-center items-center gap-10 max-w-[1920px] w-full px-5 lg:px-10 h-full">
+    <div
+      id="home"
+      className="relative min-h-screen flex flex-col lg:flex-row justify-between xl:justify-center items-center gap-10 w-full h-full bg-dark"
+    >
+      <div className="min-h-screen flex flex-col lg:flex-row justify-between xl:justify-center items-center gap-10 w-full px-5 sm:px-8 lg:px-10 h-full max-w-[1920px] ">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, ease: 'easeOut' }}
+          transition={{ duration: 3, ease: 'easeOut' }}
           className="flex flex-col justify-center items-start flex-1 pt-[15vh] lg:pt-0 z-20 lg:min-w-[500px]"
         >
           <p className="text-base md:text-2xl lg:text-3xl text-shadow-sm pb-2 md:pb-4">
@@ -47,7 +51,10 @@ export default function Hero() {
           </div>
         </motion.div>
       </div>
-      {/* </AnimatePresence> */}
-    </>
+
+      <div className="absolute bottom-0 w-full flex justify-center items-center h-[50px] mb-[50px] z-50">
+        <ScrollButtons scrollTo="projects" icon={<IoIosArrowDown className="text-4xl" />} />
+      </div>
+    </div>
   );
 }
