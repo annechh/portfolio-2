@@ -20,7 +20,10 @@ export default function Header() {
           <ul className="flex gap-5 text-base lg:text-lg">
             {sections.map((id) => (
               <li key={id}>
-                <a href={`#${id}`} className={`${activeLink === id ? 'text-pink' : 'cursor-pointer'} transition-colors duration-200`}>
+                <a
+                  href={`#${id}`}
+                  className={`${activeLink === id ? 'text-pink' : 'cursor-pointer'} transition-colors duration-200`}
+                >
                   {id.charAt(0).toUpperCase() + id.slice(1)}
                 </a>
               </li>
@@ -30,7 +33,10 @@ export default function Header() {
 
         {previousSection && (
           <div className="absolute top-0 w-full flex justify-center items-center h-[50px] mt-[60px] lg:mt-[100px]">
-            <ScrollButtons scrollTo={previousSection} icon={<IoIosArrowUp className="text-4xl" />} />
+            <ScrollButtons
+              scrollTo={previousSection}
+              icon={<IoIosArrowUp className="text-4xl" />}
+            />
           </div>
         )}
       </div>

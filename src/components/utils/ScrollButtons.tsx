@@ -10,7 +10,11 @@ const ScrollButtons = ({ scrollTo, icon }: ScrollButtonProps) => {
   };
 
   return (
-    <button onClick={handleClick} className="cursor-pointer w-20 h-[50px] flex justify-center items-center animate-bounce" aria-label={`Scroll to ${scrollTo}`}>
+    <button
+      onClick={handleClick}
+      className="cursor-pointer w-20 h-[50px] flex justify-center items-center animate-bounce"
+      aria-label={`Scroll to ${scrollTo}`}
+    >
       {icon}
     </button>
   );

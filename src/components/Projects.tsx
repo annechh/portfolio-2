@@ -4,7 +4,10 @@ import ProjectCards from './ProjectCards';
 
 const Projects = () => {
   return (
-    <section id="projects" className="relative flex flex-col justify-center items-center w-full min-h-screen gap-5 px-6 py-[70px] lg:py-[150px]">
+    <section
+      id="projects"
+      className="relative flex flex-col justify-center items-center w-full min-h-screen gap-5 px-6 py-[70px] lg:py-[150px]"
+    >
       <motion.h2
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
