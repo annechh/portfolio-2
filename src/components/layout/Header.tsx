@@ -40,7 +40,7 @@ export default function Header() {
     <header className="fixed flex w-full h-[60px] lg:h-[100px]  backdrop-blur-[20px] z-40">
       <div className="relative w-full self-center ">
         <nav className=" flex justify-between items-center w-full gap-5 text-sm px-5 md:px-10">
-          <Link to={'/'}>
+          <Link to={'/#home'}>
             <img src={logo} alt="logo" className="h-[40px] w-[75px] lg:h-[80px] lg:w-[150px]" />
           </Link>
 
