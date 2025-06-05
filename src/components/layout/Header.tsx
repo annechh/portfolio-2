@@ -48,7 +48,7 @@ export default function Header() {
             {sections.map((id) => (
               <li key={id}>
                 <a
-                  href={`#${id}`}
+                  href={`/#${id}`}
                   className={`${activeLink === id ? 'text-pink' : 'cursor-pointer'} transition-colors duration-200`}
                 >
                   {id.charAt(0).toUpperCase() + id.slice(1)}
@@ -62,7 +62,7 @@ export default function Header() {
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >
-            <Menu className="" />
+            <Menu />
           </button>
           <div
             ref={menuRef}
@@ -75,14 +75,14 @@ export default function Header() {
               onClick={toggleMenu}
               aria-label="Toggle menu"
             >
-              <XIcon className=" " />
+              <XIcon />
             </button>
             <ul className="flex flex-col gap-4 pt-[50px]">
               {isMenuOpen &&
                 sections.map((id) => (
                   <li key={id} className="self-end">
                     <a
-                      href={`#${id}`}
+                      href={`/#${id}`}
                       className={`${activeLink === id ? 'text-pink' : 'cursor-pointer'} transition-colors duration-200 h-6`}
                     >
                       {id.charAt(0).toUpperCase() + id.slice(1)}
