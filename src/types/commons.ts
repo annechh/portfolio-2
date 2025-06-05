@@ -1,27 +1,32 @@
+import { ReactElement } from 'react';
+
 export type MediaType = {
   url: string;
   alt: string;
 };
 
-export type LinkType = {
-  link: string;
-};
-
-export type ProjectType = {
+export type IconType = {
   id: string;
-  media: MediaType;
-  title: string;
-  description: string;
-  shortDescription: string;
-  icons: MediaType;
-  githubMedia: MediaType;
-  githubLink: LinkType;
-  liveDemo: LinkType;
+  icon: ReactElement;
 };
 
 export type InfoType = {
   media: MediaType;
   title: string;
   intro: string;
-  link?: LinkType;
+  link?: string;
+};
+
+export type ProjectType = {
+  id: string;
+  media: MediaType;
+  logo: MediaType;
+  title: string;
+  assignment: string;
+  description: string;
+  shortDescription: string;
+  githubLink: string;
+  liveDemoLink: string;
+  tech?: IconType[];
+  fixes?: string;
 };
