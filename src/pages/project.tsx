@@ -3,6 +3,9 @@ import { projectData } from '../data/projectData';
 import { ProjectType } from '../types/commons';
 import { MdContentCopy } from 'react-icons/md';
 import { useState } from 'react';
+import { motion } from 'framer-motion';
+import { fadeExit } from '../constants/constants';
+import { IoArrowBackOutline } from 'react-icons/io5';
 
 const ProjectPage = () => {
   const { id } = useParams<{ id: string }>();
@@ -17,7 +20,13 @@ const ProjectPage = () => {
   };
 
   return (
-    <div className="w-full flex justify-center py-[60px] lg:py-[100px]">
+    <motion.div
+      variants={fadeExit}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      className="w-full flex justify-center py-[60px] lg:py-[100px]"
+    >
       {project ? (
         <div className="max-w-[1000px] w-full flex flex-col p-6 lg:p-10 bg-dark shadow-sm">
           <div className="flex flex-col md:flex-row justify-center md:justify-between gap-5">
@@ -83,11 +92,14 @@ const ProjectPage = () => {
               </Link>
             </div>
           </div>
+          <Link to={'/#projects'} className="flex items-center gap-1 h-[30px] mt-5">
+            <IoArrowBackOutline /> Back to projects
+          </Link>
         </div>
       ) : (
         <p>Project not found.</p>
       )}
-    </div>
+    </motion.div>
   );
 };
 
