@@ -5,6 +5,7 @@ import { useScroll } from '../../context/scrollContext';
 import { useEffect, useRef, useState } from 'react';
 
 import { Menu, XIcon } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
 
 const sections = ['home', 'projects', 'about', 'toolkit'];
 
@@ -15,6 +16,9 @@ export default function Header() {
 
   const currentIndex = sections.indexOf(activeLink);
   const previousSection = currentIndex > 0 ? sections[currentIndex - 1] : null;
+
+  const location = useLocation();
+  const isHome = location.pathname === '/';
 
   const toggleMenu = () => setMenuOpen((prev) => !prev);
 
@@ -34,11 +38,13 @@ export default function Header() {
 
   return (
     <header className="fixed flex w-full h-[60px] lg:h-[100px]  backdrop-blur-[20px] z-40">
-      <div className=" w-full self-center px-5 md:px-10">
-        <nav className=" flex justify-between items-center w-full gap-5 text-sm">
-          <img src={logo} alt="logo" className="h-[40px] w-[75px] lg:h-[80px] lg:w-[150px]" />
+      <div className="relative w-full self-center ">
+        <nav className=" flex justify-between items-center w-full gap-5 text-sm px-5 md:px-10">
+          <Link to={'/'}>
+            <img src={logo} alt="logo" className="h-[40px] w-[75px] lg:h-[80px] lg:w-[150px]" />
+          </Link>
 
-          <ul className="hidden lg:flex gap-5 text-base lg:text-lg ">
+          <ul className="hidden lg:flex gap-5 text-base lg:text-lg text-shadow-sm">
             {sections.map((id) => (
               <li key={id}>
                 <a
@@ -60,7 +66,7 @@ export default function Header() {
           </button>
           <div
             ref={menuRef}
-            className={`absolute lg:hidden top-0 right-0  min-h-screen bg-dark shadow-sm w-40 px-10 pt-[18px] flex flex-col gap-4 z-40 ${
+            className={`absolute lg:hidden top-[-10px] right-0  min-h-screen bg-dark shadow-sm w-40 px-5 md:px-10 pt-[18px] flex flex-col gap-4 z-40 ${
               isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
             }`}
           >
@@ -87,7 +93,7 @@ export default function Header() {
           </div>
         </nav>
 
-        {previousSection && (
+        {isHome && previousSection && (
           <div className="absolute top-0 w-full flex justify-center items-center h-[50px] mt-[60px] lg:mt-[100px]">
             <ScrollButtons
               scrollTo={previousSection}
