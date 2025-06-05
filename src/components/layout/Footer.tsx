@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom';
 
 export default function Footer() {
   const { activeLink } = useScroll();
-  const sections = ['home', 'projects', 'about', 'toolkit'];
+  const sections = ['home', 'projects', 'about', 'tech'];
 
   const location = useLocation();
   const isHome = location.pathname === '/';

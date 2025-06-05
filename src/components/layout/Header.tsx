@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Menu, XIcon } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
-const sections = ['home', 'projects', 'about', 'toolkit'];
+const sections = ['home', 'projects', 'about', 'tech'];
 
 export default function Header() {
   const { activeLink } = useScroll();
