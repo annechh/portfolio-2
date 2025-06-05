@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
 type ScrollContextType = {
   activeLink: string;
@@ -6,10 +7,11 @@ type ScrollContextType = {
 
 const ScrollContext = createContext<ScrollContextType | undefined>(undefined);
 
-const sections = ['home', 'projects', 'about', 'toolkit'];
+const sections = ['home', 'projects', 'about', 'tech'];
 
 export const ScrollProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [activeLink, setActiveLink] = useState('home');
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,6 +32,12 @@ export const ScrollProvider: React.FC<{ children: React.ReactNode }> = ({ childr
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    if (location.pathname === '/') {
+      setActiveLink('home');
+    }
+  }, [location.pathname]);
 
   return <ScrollContext.Provider value={{ activeLink }}>{children}</ScrollContext.Provider>;
 };

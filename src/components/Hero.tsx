@@ -33,7 +33,19 @@ export default function Hero() {
           className="flex flex-col h-full overflow-hidden mb-[50px] lg:mb-0"
         >
           <div className="relative max-w-[500px] lg:max-w-[600px] w-full h-auto">
-            <img
+            <motion.img
+              initial={{ opacity: 0, y: 40 }}
+              animate={{ opacity: 1, y: 0, scale: [1, 1.1, 1] }}
+              transition={{
+                duration: 5,
+                ease: 'easeOut',
+                scale: {
+                  duration: 5,
+                  repeat: Infinity,
+                  repeatType: 'loop',
+                  ease: 'easeInOut',
+                },
+              }}
               src={GlowDot}
               alt="glow effect"
               className="absolute left-1/2 top-2/3 -translate-x-1/2 -translate-y-1/2 pointer-events-none z-0"
