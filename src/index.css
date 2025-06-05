@@ -7,6 +7,7 @@
   --color-pink: #c392ff;
   --color-white-faded: #ffffff81;
   --color-deep-indigo: #262239;
+  --color-sun: #ffc857;
 
   --shadow-sm: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
   --shadow-pink: 0px 4px 15px 0px rgba(195, 146, 255, 0.25);
@@ -46,7 +47,7 @@ html {
 }
 
 .button {
-  @apply shadow-sm flex items-center justify-center max-w-64 w-full rounded-full text-base md:text-xl font-bold tracking-wider;
+  @apply shadow-sm  flex items-center justify-center h-[50px] w-full rounded-full text-sm md:text-xl font-bold cursor-pointer border border-sun hover:bg-sun hover:text-black transition-all duration-500 ease-in-out;
 }
 
 /* .card {
