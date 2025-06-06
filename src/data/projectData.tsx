@@ -15,13 +15,14 @@ import SE from '../assets/images/SE.png';
 import BG_IMG from '../assets/images/ramsdalsnipa2.jpg';
 import { SiCss3, SiTailwindcss, SiTypescript, SiVite } from 'react-icons/si';
 import { DiHtml5, DiJsBadge, DiReact } from 'react-icons/di';
+import { ProjectType } from '../types/commons';
 
 export const backgroundData = {
   url: BG_IMG,
   alt: 'Ramsdalsnipa mountain',
 };
 
-export const projectData = [
+export const projectData: ProjectType[] = [
   {
     id: 'Holidaze',
     media: {
@@ -34,9 +35,26 @@ export const projectData = [
     },
     title: 'Holidaze',
     assignment: 'Second year Project Exam',
-    description: `Second year Project Exam. 
-    This project is the result of two years of front-end development training, focused on planning, designing, and building a responsive booking platform for Holidaze, a fictional accommodation service. The goal was to create a modern front-end that communicates with an external API to manage venues and bookings.`,
-    shortDescription: 'Second year Project Exam - Holidaze short description',
+    description: `
+    Holidaze is a second year project exam, developed as a group collaboration. It’s a fictional accommodation booking site where users can browse, book, and manage venues based on their role: visitor, customer, or venue manager. The project focused on role-based functionality and delivering a clean user experience.
+
+    Key Features:
+    - View and search for venues
+    - Register and log in (customer or venue manager)
+    - Book venues with calendar availability
+    - View upcoming bookings on profile
+    - Update avatar, bio, and banner
+
+    Venue managers can:
+    - Create, edit, and delete venues
+    - View bookings for their venues
+
+    This project provided valuable experience working collaboratively as a team, managing shared code, and building a React app with API data.
+
+    Built with React, TypeScript, Tailwind CSS, and Vite.
+    `,
+    shortDescription:
+      'Holidaze lets users browse, book, and manage venues with role-based access in a clean, user-friendly booking platform.',
     githubLink: 'https://github.com/H-A-L-code/project-exam-2',
     liveDemoLink: 'https://hal-holidaze.netlify.app/',
     tech: [
@@ -45,6 +63,7 @@ export const projectData = [
       { id: 'typescript', icon: <SiTypescript /> },
       { id: 'vite', icon: <SiVite /> },
     ],
+    feedback: 'Final submission - Awaiting feedback',
   },
 
   {
@@ -59,9 +78,22 @@ export const projectData = [
     },
     title: 'Lazy Sales',
     assignment: 'JS Frameworks course assignment',
-    description: `JS Frameworks course assignment. 
-    Built a responsive eCommerce web app using React and React Router. Integrated product data from an external API to create dynamic pages including a homepage with live search, individual product pages, cart, checkout, and contact form with validation. Implemented global cart state and discount logic. Styled using CSS Modules and deployed to Netlify. `,
-    shortDescription: 'JS Frameworks course assignment - Lazy Sales short description',
+    description: `
+    Lazy Sales is a JS Frameworks course assignment developed as a group collaboration. It’s a fictional eCommerce platform designed to offer a smooth and efficient shopping experience. Users can browse products, search for items, and complete purchases with minimal effort. The focus was on creating a clean interface and frictionless user flow.
+
+    Key Features:
+    - Product listing with search
+    - Basic product details and add-to-cart
+    - Simple checkout form
+    - Order confirmation message
+    - Contact form with validation
+
+    This project provided valuable experience working collaboratively as a team, managing shared code, and building a React app with API data.
+
+    Built with React, TypeScript, Tailwind CSS, and Vite.
+    `,
+    shortDescription:
+      'Lazy Sales offers a simple, no-fuss shopping experience with easy browsing, quick checkout, and order confirmation.',
     githubLink: 'https://github.com/annechh/ca-js-frameworks',
     liveDemoLink: 'https://lazysales.netlify.app/',
     tech: [
@@ -69,8 +101,8 @@ export const projectData = [
       { id: 'react', icon: <DiReact /> },
       { id: 'vite', icon: <SiVite /> },
     ],
-    fixes:
-      'From feedback on this project I have fixed labels missing htmlFor, added ids to input fields and removed unnecessary use of fragments ',
+    feedback: `Consider simplifying your JSX by removing unnecessary React Fragments (<> </>) when they aren't grouping multiple elements. Also, ensure all <label> elements are properly associated with their corresponding input fields using the htmlFor attribute to improve accessibility.`,
+    fix: 'Based on the feedback, I have associated all labels with inputs using htmlFor and matching IDs, and removed unnecessary use of React Fragments.',
   },
 
   {
@@ -85,10 +117,20 @@ export const projectData = [
     },
     title: 'Bid Me',
     assignment: 'Second year Semester Project',
-    description: `Second year Semester Project. 
-    In this project the goal was to create a website for a fictional client. The client was a company that wanted to create a website where people could bid on items.
-    The website was to be a simple auction site where people could bid on items.`,
-    shortDescription: 'Semester Project 2 - Bid Me short description',
+    description: `
+    BidMe is a second year semester project focused on building an online auction house where users can browse and search listings, register and log in with a Noroff email, and participate in auctions. Registered users can place bids on listings, view bids made, and delete their own listings. Guests can search listings without registering.
+
+    Key Features:
+    - User registration with @noroff.no or @stud.noroff.no email
+    - Login and logout functionality
+    - Create, view, and delete auction listings
+    - Place bids and view bids on listings
+    - Update user profile and avatar
+    - Search auction listings as a guest
+
+    Built with JavaScript, Tailwind CSS, and Vite.`,
+    shortDescription:
+      'BidMe is an online auction platform where users can register, bid, create listings, and browse auctions with ease.',
     githubLink: 'https://github.com/annechh/BidMe-SP-2',
     liveDemoLink: 'https://bidme-sp2.netlify.app/',
     tech: [
@@ -96,7 +138,9 @@ export const projectData = [
       { id: 'javaScript', icon: <DiJsBadge /> },
       { id: 'vite', icon: <SiVite /> },
     ],
-    fixes: 'From feedback on this project I have fixed the alert I missed',
+    feedback:
+      'Feedback: Replace alerts with proper UI feedback and add input validation in bid implementation.',
+    fix: 'Fix: Added validation to ensure the bid is higher than the current bid and replaced alerts with error messages shown directly in the UI.',
   },
 
   {
@@ -111,14 +155,17 @@ export const projectData = [
     },
     title: 'Shira´s Adventure',
     assignment: 'First year Project Exam',
-    description: `First year Project Exam. 
-    In this project the goal was to create a blog page using Api. The methods to use in this project were CREATE, GET, EDIT, PUT and DELETE. 
-    We could create our own fictional client, so I chose my dog Shira to be my client. I had a lot of fun with this project since I used Shira as my client, and could provide my own photos.`,
-    shortDescription: 'First year Project Exam - Shira´s Adventure short description',
+    description: `
+    Shira’s Adventure is a first year Project Exam to build a responsive blog page using an API, focusing on CRUD operations (CREATE, GET, EDIT, PUT, DELETE). I created a fictional client, my dog Shira, and used personal photos to bring the project to life. The app allows viewing dynamic blog posts and includes admin pages to manage content.
+
+    Built with: HTML, CSS, JavaScript
+    `,
+    shortDescription:
+      'Shira’s Adventure is a responsive blog project featuring CRUD functionality and dynamic posts, inspired by my dog Shira.',
     githubLink: 'https://github.com/annechh/FED1-Project-Exam-1',
     liveDemoLink: 'https://annechh.github.io/FED1-Project-Exam-1/',
     tech: [
-      { id: 'HTML', icon: <DiHtml5 /> },
+      { id: 'HTML', icon: <DiHtml5 className="text-4xl" /> },
       { id: 'CSS', icon: <SiCss3 /> },
       { id: 'javaScript', icon: <DiJsBadge /> },
     ],
@@ -136,14 +183,17 @@ export const projectData = [
     },
     title: 'Sunnfjord Science Museum',
     assignment: 'First year semester project',
-    description: `First year semester project.
-    Design and build a modern, accessible and responsive web presence for the client using the provided image and text content.
-    The site should appeal to youngsters without pandering; while aiming at a younger audience it should not patronize them with overtly childish themes. The core purpose of the site is to excite and entice people to visit the museum.`,
-    shortDescription: 'First year Semester Project - Sunnfjord Science Museum short description',
+    description: `
+    Sunnfjord Science Museum is a first-year semester project focused on designing and building an accessible and responsive website. The site aims to engage a younger audience without being overly childish, encouraging visitors to explore the museum through appealing visuals and clear content.
+
+    Built with HTML and CSS
+    `,
+    shortDescription:
+      'A responsive website project designed to engage younger visitors with clear content and appealing visuals.',
     githubLink: 'https://github.com/annechh/Semester-Project-1',
     liveDemoLink: 'https://annechh.github.io/Semester-Project-1/',
     tech: [
-      { id: 'HTML', icon: <DiHtml5 /> },
+      { id: 'HTML', icon: <DiHtml5 className="text-4xl" /> },
       { id: 'CSS', icon: <SiCss3 /> },
     ],
   },
@@ -160,14 +210,17 @@ export const projectData = [
     },
     title: 'Square Eyes',
     assignment: 'Html and CSS course assignment',
-    description: `SquareEyes was my first assignment to put into practice what I’ve learned about HTML and CSS over this course by bringing my design alive.
-    SquareEyes is a video streaming website where you can purchase high-quality videos directly from the people who make them.`,
+    description: `
+    SquareEyes was my first assignment to put into practice what I’ve learned about HTML and CSS by bringing my design to life. It’s a fictional video streaming website where users can purchase high-quality videos directly from the creators for online viewing.
+
+    Built with HTML and CSS
+    `,
     shortDescription:
-      'SquareEyes was my first assignment to put into practice what I’ve learned about HTML and CSS over this course by bringing my design alive.',
+      'A fictional video streaming site project where users can buy videos directly from creators for online viewing.',
     githubLink: 'https://github.com/annechh/SquareEyes',
     liveDemoLink: 'https://annechh.github.io/SquareEyes/',
     tech: [
-      { id: 'HTML', icon: <DiHtml5 /> },
+      { id: 'HTML', icon: <DiHtml5 className="text-4xl" /> },
       { id: 'CSS', icon: <SiCss3 /> },
     ],
   },

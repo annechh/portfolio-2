@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { introductionData } from '../data/data';
+import { introductionData } from '../data/aboutData';
 import GlowDot from '../assets/images/glow-dot.png';
 
 export default function Hero() {

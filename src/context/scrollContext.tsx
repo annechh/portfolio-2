@@ -36,8 +36,18 @@ export const ScrollProvider: React.FC<{ children: React.ReactNode }> = ({ childr
   useEffect(() => {
     if (location.pathname === '/') {
       setActiveLink('home');
+      setTimeout(() => {
+        if (location.hash) {
+          const id = location.hash.replace('#', '');
+          const el = document.getElementById(id);
+          if (el) {
+            el.scrollIntoView({ behavior: 'smooth' });
+            setActiveLink(id);
+          }
+        }
+      }, 100);
     }
-  }, [location.pathname]);
+  }, [location]);
 
   return <ScrollContext.Provider value={{ activeLink }}>{children}</ScrollContext.Provider>;
 };
