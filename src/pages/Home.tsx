@@ -1,17 +1,28 @@
-import { backgroundData } from '../assets/projectData';
-import Background from '../components/Background';
-import LOGO_ICON from '../assets/images/LogoIcon.svg';
+import Hero from '../components/Hero';
+import About from '../components/About';
+import Tech from '../components/Tech';
+import Projects from '../components/Projects';
+import { motion } from 'framer-motion';
+import { fadeExit } from '../constants/constants';
+import { useScrollToHash } from '../hooks/useScrollToHash';
 
-export default function Home() {
+const Home = () => {
+  useScrollToHash();
+
   return (
-    <div className="flex flex-col justify-center items-center w-full">
-      <Background image={backgroundData} />
-
-      <section className="flex flex-col justify-center items-center gap-3 text-center px-5">
-        <h1 className="text-4xl md:text-5xl font-bold ">Page is under production</h1>
-        <p>Expected to be finished by June 8, 2025</p>
-        <img src={LOGO_ICON} alt="HaugeDev logo icon" className="spin" />
-      </section>
-    </div>
+    <motion.div
+      variants={fadeExit}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      className="flex flex-col justify-center items-center w-full"
+    >
+      <Hero />
+      <Projects />
+      <About />
+      <Tech />
+    </motion.div>
   );
-}
+};
+
+export default Home;

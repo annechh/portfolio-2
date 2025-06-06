@@ -1,22 +1,33 @@
 @import 'tailwindcss';
 
-/* :root { */
-/* --purple: #210727; */
-/* --purple-light: #2107273d; */
-/* --white-faded: #ffffff81; */
-/* --purple-faded: rgb(58, 0, 53, 0.1); */
-/* --black: 0px 2px 2px rgba(0, 0, 0, 1); */
-/* } */
-
 @theme {
   --font-primary: 'Roboto', sans-serif;
 
-  --color-white-faded: #ffffff81;
-  --color-purple: #210727;
-  --color-purple-light: #2107273d;
-  --color-purple-faded: #3a00351a;
+  --color-dark: #1d1d1d;
+  --color-pink: #c392ff;
   --color-deep-indigo: #262239;
-  --shadow-sm: 0px 4px 15px 0px rgba(0, 0, 0, 0.5);
+  --color-sun: #ffc857;
+
+  --shadow-sm: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
+  --shadow-pink: 0px 4px 15px 0px rgba(195, 146, 255, 0.25);
+  --text-shadow-sm: 0px 2px 2px rgba(0, 0, 0, 1);
+}
+
+@layer utilities {
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(-25%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: none;
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 3);
+    }
+  }
+  .animate-bounce {
+    animation: bounce 3s infinite;
+  }
 }
 
 @layer utilities {
@@ -49,14 +60,29 @@ html {
   }
 }
 
-.card {
-  @apply w-[480px] m-[-150px]  bg-deep-indigo;
+.button {
+  @apply shadow-sm  flex items-center justify-center h-[50px] w-full rounded text-sm md:text-xl font-bold cursor-pointer border border-sun hover:bg-sun hover:text-black transition-all duration-500 ease-in-out;
 }
 
-.card:first-child {
+/* .card {
+  @apply w-[480px] m-[-150px]  bg-deep-indigo;
+} */
+
+/* .card:first-child {
   @apply ml-0;
 }
 
 .card-wrapper {
   @apply flex;
+} */
+
+/* Embla Carousel Styles */
+.embla {
+  @apply overflow-hidden w-full;
+}
+.embla__container {
+  @apply flex;
+}
+.embla__slide {
+  @apply flex flex-shrink-0 w-full px-5 lg:px-10;
 }
