@@ -34,7 +34,7 @@ const ProjectPage = () => {
                 <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold tracking-widest">
                   {project?.title}
                 </h1>
-                <div className="flex gap-3 ">
+                <div className="flex items-center gap-3 ">
                   {project?.tech?.map((tech) => (
                     <span key={tech.id} className="text-lg md:text-3xl">
                       {tech.icon}
