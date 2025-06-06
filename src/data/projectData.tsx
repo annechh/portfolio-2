@@ -15,13 +15,14 @@ import SE from '../assets/images/SE.png';
 import BG_IMG from '../assets/images/ramsdalsnipa2.jpg';
 import { SiCss3, SiTailwindcss, SiTypescript, SiVite } from 'react-icons/si';
 import { DiHtml5, DiJsBadge, DiReact } from 'react-icons/di';
+import { ProjectType } from '../types/commons';
 
 export const backgroundData = {
   url: BG_IMG,
   alt: 'Ramsdalsnipa mountain',
 };
 
-export const projectData = [
+export const projectData: ProjectType[] = [
   {
     id: 'Holidaze',
     media: {
