@@ -42,10 +42,14 @@ export default function About() {
         <div className="max-w-[740px] w-full p-6">
           <p className="lg:text-xl mb-4 whitespace-pre-line"> {aboutData.description}</p>
           <div className="flex gap-3">
-            <Link to={aboutData.connect.linkedIn} target="_blank">
+            <Link
+              to={aboutData.connect.linkedIn}
+              target="_blank"
+              aria-label="Visit my LinkedIn profile"
+            >
               <FaLinkedin className="text-pink text-3xl" />
             </Link>
-            <Link to={aboutData.connect.instagram} target="_blank">
+            <Link to={aboutData.connect.instagram} target="_blank" aria-label="Visit my Instagram">
               <FaInstagram className="text-pink text-3xl" />
             </Link>
           </div>
