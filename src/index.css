@@ -2,19 +2,32 @@
 
 @theme {
   --font-primary: 'Roboto', sans-serif;
+
   --color-dark: #1d1d1d;
   --color-pink: #c392ff;
-
-  --color-white-faded: #ffffff81;
-  --color-purple: #573564;
-  --color-purple-light: #2107273d;
-  --color-purple-faded: #3a00351a;
   --color-deep-indigo: #262239;
-  --color-sundown-blush: #7b4042;
+  --color-sun: #ffc857;
 
   --shadow-sm: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
   --shadow-pink: 0px 4px 15px 0px rgba(195, 146, 255, 0.25);
   --text-shadow-sm: 0px 2px 2px rgba(0, 0, 0, 1);
+}
+
+@layer utilities {
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(-25%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: none;
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 3);
+    }
+  }
+  .animate-bounce {
+    animation: bounce 3s infinite;
+  }
 }
 
 html {
@@ -33,7 +46,7 @@ html {
 }
 
 .button {
-  @apply bg-sundown-blush shadow-sm flex items-center justify-center max-w-64 w-full rounded-full text-base md:text-xl font-bold tracking-wider;
+  @apply shadow-sm  flex items-center justify-center h-[50px] w-full rounded text-sm md:text-xl font-bold cursor-pointer border border-sun hover:bg-sun hover:text-black transition-all duration-500 ease-in-out;
 }
 
 /* .card {
