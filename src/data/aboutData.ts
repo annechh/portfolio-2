@@ -1,7 +1,8 @@
 import image_1 from '../assets/images/Anne1.png';
 import image_2 from '../assets/images/Anne2.png';
+import { AboutType, IntroType } from '../types/commons';
 
-export const introductionData = {
+export const introductionData: IntroType = {
   title: 'Designing, building and always learning',
   intro1: `Hello, I'm Anne`,
   intro2: 'From Figma to functional – bringing interfaces to life.',
@@ -11,7 +12,7 @@ export const introductionData = {
   },
 };
 
-export const aboutData = {
+export const aboutData: AboutType = {
   title: 'About Me',
   description: `
   Hi! 👋 
@@ -27,5 +28,9 @@ export const aboutData = {
   media: {
     url: image_2,
     alt: 'Girl in snowboard clothes with arms spread wide, smiling at the camera behind a balaclava mask and goggles',
+  },
+  connect: {
+    linkedIn: 'https://www.linkedin.com/in/anne-cathrine-hauge-b893bbb3/',
+    instagram: 'https://www.instagram.com/skofant/',
   },
 };

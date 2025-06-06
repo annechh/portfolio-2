@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 import { aboutData } from '../data/aboutData';
+import { FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 export default function About() {
   return (
@@ -39,6 +41,14 @@ export default function About() {
         </motion.div>
         <div className="max-w-[740px] w-full p-6">
           <p className="lg:text-xl mb-4 whitespace-pre-line"> {aboutData.description}</p>
+          <div className="flex gap-3">
+            <Link to={aboutData.connect.linkedIn} target="_blank">
+              <FaLinkedin className="text-pink text-3xl" />
+            </Link>
+            <Link to={aboutData.connect.instagram} target="_blank">
+              <FaInstagram className="text-pink text-3xl" />
+            </Link>
+          </div>
         </div>
       </motion.div>
     </section>

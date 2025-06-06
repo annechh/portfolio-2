@@ -10,11 +10,23 @@ export type IconType = {
   icon: ReactElement;
 };
 
-export type InfoType = {
-  media: MediaType;
+export type ConnectType = {
+  linkedIn: string;
+  instagram: string;
+};
+
+export type AboutType = {
   title: string;
-  intro: string;
-  link?: string;
+  description: string;
+  media: MediaType;
+  connect: ConnectType;
+};
+
+export type IntroType = {
+  title: string;
+  intro1: string;
+  intro2: string;
+  media: MediaType;
 };
 
 export type ProjectType = {
