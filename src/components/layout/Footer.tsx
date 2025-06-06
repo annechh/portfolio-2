@@ -15,7 +15,7 @@ export default function Footer() {
     currentIndex >= 0 && currentIndex < sections.length - 1 ? sections[currentIndex + 1] : null;
 
   return (
-    <footer className="flex justify-center items-center w-full h-[50px] text-xs fixed bottom-0 border-t border-white-faded backdrop-blur-[20px] z-50">
+    <footer className="flex justify-center items-center w-full h-[50px] text-xs fixed bottom-0 border-t border-white/50 backdrop-blur-[20px] z-50">
       <div className="relative w-full flex justify-center items-center">
         <p>Copyright © Hauge Dev</p>
       </div>
