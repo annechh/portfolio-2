@@ -11,9 +11,7 @@ const Tech = () => {
       transition={{ duration: 0.5 }}
       className="relative min-h-screen flex flex-col justify-center items-center w-full px-6 py-[70px] lg:py-[150px]"
     >
-      <h2 className="pb-2 text-2xl lg:text-[40px] font-bold w-full max-w-[1260px] text-shadow-sm">
-        Tech
-      </h2>
+      <h2 className="pb-2 text-2xl lg:text-[40px] font-bold w-full max-w-[1260px]">Tech</h2>
       <div className="flex flex-col max-w-[1260px] h-full w-full border-t border-white/50 mb-[100px]">
         <ul className="flex justify-center gap-10 flex-wrap py-10">
           {techData.map((tech) => (
