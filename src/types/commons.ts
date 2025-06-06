@@ -28,5 +28,6 @@ export type ProjectType = {
   githubLink: string;
   liveDemoLink: string;
   tech?: IconType[];
-  fixes?: string;
+  feedback?: string;
+  fix?: string;
 };
