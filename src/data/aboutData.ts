@@ -18,7 +18,7 @@ export const aboutData: AboutType = {
   Hi! 👋 
   I’m Anne-Cathrine Hauge, a 36-year-old front-end developer from Naustdal, Norway.
 
-  I’m finishing a two-year front-end education at Noroff, working with HTML, CSS, JavaScript, React, and design tools like Figma. I enjoy turning visual ideas into clean, user-friendly websites.
+  I have completed a two-year front-end education at Noroff, where I worked with HTML, CSS, JavaScript, React, and design tools like Figma. I enjoy turning visual ideas into clean, user-friendly websites.
 
   What excites me most is constant learning and creative problem-solving. My goal is to join a team where I can grow, contribute, and eventually explore backend development to become a full-stack developer.
 
