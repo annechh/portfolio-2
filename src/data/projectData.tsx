@@ -63,7 +63,6 @@ export const projectData: ProjectType[] = [
       { id: 'typescript', icon: <SiTypescript /> },
       { id: 'vite', icon: <SiVite /> },
     ],
-    feedback: 'Final submission - Awaiting feedback',
   },
 
   {
@@ -101,8 +100,6 @@ export const projectData: ProjectType[] = [
       { id: 'react', icon: <DiReact /> },
       { id: 'vite', icon: <SiVite /> },
     ],
-    feedback: `Consider simplifying your JSX by removing unnecessary React Fragments (<> </>) when they aren't grouping multiple elements. Also, ensure all <label> elements are properly associated with their corresponding input fields using the htmlFor attribute to improve accessibility.`,
-    fix: 'Based on the feedback, I have associated all labels with inputs using htmlFor and matching IDs, and removed unnecessary use of React Fragments.',
   },
 
   {
@@ -138,9 +135,6 @@ export const projectData: ProjectType[] = [
       { id: 'javaScript', icon: <DiJsBadge /> },
       { id: 'vite', icon: <SiVite /> },
     ],
-    feedback:
-      'Feedback: Replace alerts with proper UI feedback and add input validation in bid implementation.',
-    fix: 'Fix: Added validation to ensure the bid is higher than the current bid and replaced alerts with error messages shown directly in the UI.',
   },
 
   {

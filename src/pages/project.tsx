@@ -69,26 +69,9 @@ const ProjectPage = () => {
           </div>
 
           <div className="flex flex-col gap-10">
-            <div className="flex flex-col gap-10">
-              <div className="flex flex-col gap-1">
-                <h2 className="text-xl font-bold">{project.title}</h2>
-                <p className="px-3 whitespace-pre-line">{project.description}</p>
-              </div>
-
-              {project.feedback && (
-                <div className="flex flex-col gap-2 p-5 border border-white/50 rounded">
-                  <div className="flex flex-col gap-1">
-                    <h2 className="text-xl font-bold">Feedback</h2>
-                    <p className="px-3">{project.feedback}</p>
-                  </div>
-                  {project.fix && (
-                    <div className="flex flex-col gap-1">
-                      <h2 className="text-xl font-bold">Fix</h2>
-                      <p className="px-3">{project.fix}</p>
-                    </div>
-                  )}
-                </div>
-              )}
+            <div className="flex flex-col gap-1">
+              <h2 className="text-xl font-bold">{project.title}</h2>
+              <p className="px-3 whitespace-pre-line">{project.description}</p>
             </div>
 
             <div className="flex gap-5">
