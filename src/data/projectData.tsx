@@ -89,7 +89,7 @@ export const projectData: ProjectType[] = [
 
     This project provided valuable experience working collaboratively as a team, managing shared code, and building a React app with API data.
 
-    Built with React, TypeScript, Tailwind CSS, and Vite.
+    Built with React, Tailwind CSS, and Vite.
     `,
     shortDescription:
       'Lazy Sales offers a simple, no-fuss shopping experience with easy browsing, quick checkout, and order confirmation.',
